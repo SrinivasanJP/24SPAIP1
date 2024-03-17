@@ -17,7 +17,7 @@ const PredictionForm = () => {
     formData.append('file', file);
 
     try {
-      const response = await axios.post('http://localhost:8000/predict', formData, {
+      const response = await axios.post('http://localhost:8000/predictImage', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         }
